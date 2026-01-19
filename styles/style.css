@@ -1,5 +1,20 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
     font-family: "Inter", sans-serif;
+}
+
+:root{
+    --bg-primary: #1A0B2E;
+    --bg-secondary: #230E3D;
+    --btn-secondary: #00FF88;
+    --linear-first: #F7E93F;
+    --linear-second: #FB09B4;
+    --linear-third: #9100F8;
+    --text-primary: #FFFFFF;
 }
 
 .banner-title{
