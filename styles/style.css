@@ -31,6 +31,10 @@ body{
     margin: 0 auto;
 }
 
+.logo-header{
+    cursor: pointer;
+}
+
 .btn-primary{
     padding: 12px 16px;
     color: var(--text-primary);
@@ -62,7 +66,7 @@ hr{
 
 .section-description{
     line-height: 20px;
-    opacity: 80%;
+    opacity: 60%;
     margin-bottom: 32px;
     color: var(--text-primary);
 }
@@ -95,6 +99,7 @@ hr{
 
 .hamburger-menu{
     display: none;
+    cursor: pointer;
 }
 
 #banner{
@@ -316,6 +321,46 @@ hr{
     margin: 12px 0;
 }
 
+/* Meet the host section styles  */
+.host-card{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 48px 40px;
+    border-radius: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+}
+
+.host-card .host-img img{
+    border-radius: 50%;
+}
+
+.card-content .host-name{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.card-content .social-links{
+    display: flex;
+    gap: 8px;
+}
+
+.card-content .social-links .social-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(53, 17, 101, 0.6);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card-content .social-links img{
+    width: 20px;
+}
+
 /* Medium device responsive styles  */
 @media screen and (max-width:992px){
     #about .section-content .section-description{
@@ -419,5 +464,14 @@ hr{
         border-top-left-radius: 24px;
         border-top-right-radius: 24px;
         border-bottom-left-radius: 0;
+    }
+
+    .host-card{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-content .social-links{
+        justify-content: center;
     }
 }
