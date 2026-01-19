@@ -56,7 +56,8 @@ hr{
 .section-title{
     font-size: 3rem;
     color: var(--text-primary);
-    margin-bottom: 16px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .section-description{
@@ -64,6 +65,13 @@ hr{
     opacity: 80%;
     margin-bottom: 32px;
     color: var(--text-primary);
+}
+
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 16px 0;
 }
 
 /* header section styles  */
@@ -203,12 +211,16 @@ hr{
 #about .section-content{
     padding-bottom: 40px;
     margin-bottom: 80px;
-    text-align: center;
     border-bottom: 1px solid #412567;
+}
+
+#about .section-content .section-title{
+    margin-bottom: 16px;
 }
 
 #about .section-content .section-description{
     padding: 0 15%;
+    text-align: center;
 }
 
 .about-card-container{
@@ -230,14 +242,61 @@ hr{
     color: var(--btn-secondary);
 }
 
+/* Why choose section styles  */
+#why-choose{
+    background-color: var(--bg-secondary);
+    padding: 120px 0;
+}
+
+.why-choose-card-container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.why-choose-card-container .why-choose-card:nth-child(1){
+    grid-row: span 2;
+}
+
+.why-choose-card-container .why-choose-card:nth-child(2),
+.why-choose-card:nth-child(3){
+    grid-column: span 2;
+}
+
+.why-choose-card-container .why-choose-card:nth-child(4){
+    grid-column: span 2;
+}
+
+.why-choose-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.why-choose-card .section-description{
+    margin-bottom: 10px;
+}
+
 /* Medium device responsive styles  */
 @media screen and (max-width:992px){
     #about .section-content .section-description{
-    padding: 0;
+        padding: 0;
     }
     .about-card .card-title{
-    font-size: 1.8rem;
-}
+        font-size: 1.8rem;
+    }
+
+    .why-choose-card-container{
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    #why-choose .container .why-choose-card-container .why-choose-card{
+        grid-column: auto ;
+        grid-row: auto ;
+    }
 }
 
 /* Mobile device responsive styles  */
