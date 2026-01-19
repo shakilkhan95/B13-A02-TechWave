@@ -31,7 +31,8 @@ body{
     margin: 0 auto;
 }
 
-.logo-header{
+.logo-header,
+.logo-footer{
     cursor: pointer;
 }
 
@@ -322,6 +323,10 @@ hr{
 }
 
 /* Meet the host section styles  */
+#host{
+    padding-bottom: 120px;
+}
+
 .host-card{
     display: flex;
     align-items: center;
@@ -359,6 +364,35 @@ hr{
 
 .card-content .social-links img{
     width: 20px;
+}
+
+/* footer section styles  */
+#footer{
+    background: url(../assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top: 1px solid #412567;
+}
+
+#footer .container{
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+#footer .social-links{
+    display: flex;
+    gap: 40px;
+}
+
+#footer .social-links a{
+    display: flex;
+    gap: 8px;
+    color: var(--text-primary);
 }
 
 /* Medium device responsive styles  */
@@ -442,7 +476,9 @@ hr{
 
     .about-card-container,
     #why-choose,
-    #episodes{
+    #episodes,
+    #host,
+    #footer .container{
         padding: 40px 0;
     }
 
@@ -474,4 +510,10 @@ hr{
     .card-content .social-links{
         justify-content: center;
     }
+
+    #footer .social-links{
+        justify-content: center;
+        padding: 0 80px;
+        flex-wrap: wrap;
+}
 }
