@@ -231,4 +231,8 @@ hr{
         max-width: 80%;
         margin: 0 auto 30px;
     }
+    .banner-img-container .badge{
+    top: 10px;
+    right: -10px;
+}
 }
